@@ -1,21 +1,298 @@
+@font-face{
+    font-family: 'Mist';
+    src: url('Fonts/Mistrain.ttf');
+    src: url('Fonts/Mistrain.ttf') format('truetype');
+}
 /*phone*/
 @media only screen and (max-width: 600px){
         /*Grid-container*/
         .grid-container{
             display: grid;
             grid-template-rows: 15% 10% auto 10% 10% 10% 10% 20%;
+            grid-template-columns: 100%;
             margin: 0px;
+        }
+        /*do not need for the mobile*/
+        .logo{
+            display: none;
+            visibility: hidden;
+        }
+        .header{
+            display: none;
+            visibility: hidden;
+        }
+        /*header*/
+        .headP{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            font-family: 'mist';
+        }
+        /*header*/
+        .tite{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-family: 'mist';
+        }
+        /*about*/
+        .bout{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        /*navigation*/
+        .nav1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .nav2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .nav3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        .nav4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 7;
+            grid-row-end: 8;
+        }
+        /*footer*/
+        .foot{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 8;
+            grid-row-end: 9;
         }
 }
 /*vertical tablet===============================================================================================================================================================*/
-@media only screen and (min-width: 601px) and (max-width: 800px){}
-/*Landscape tablet==============================================================================================================================================================*/
-@media only screen and (min-width: 800px) and (max-width: 1200px){}
-/*Computer======================================================================================================================================================================*/
-@media only screen and (min-width: 1200px){}
-/*All of them===================================================================================================================================================================*/
-@font-face{
-    font-family: 'Mist';
-    src: url('Fonts/Mistrain.ttf');
-    src: url('Fonts/Mistrain.ttf') format('truetype');
+@media only screen and (min-width: 601px) and (max-width: 800px){
+    /*Grid-container*/
+    .grid-container{
+        display: grid;
+        grid-template-rows: 15% 10% auto 10% 10% 10% 10% 20%;
+        grid-template-columns: 100%;
+        margin: 0px;
+    }
+    /*do not need for the vertical tablet*/
+    .logo{
+        display: none;
+        visibility: hidden;
+    }
+    .header{
+        display: none;
+        visibility: hidden;
+    }
+    /*header*/
+    .headP{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        font-family: 'mist';
+    }
+    /*header*/
+    .tite{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-family: 'mist';
+    }
+    /*about*/
+    .bout{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*navigation*/
+    .nav1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .nav2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .nav3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .nav4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    /*footer*/
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
 }
+/*Landscape tablet==============================================================================================================================================================*/
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+     /*grid-container*/
+     .grid-container{
+        display: grid;
+        grid-template-rows: 15% 15% 25% 25% 20%;
+        grid-template-columns: 25% 50% 25%;
+    }
+    /*do not need for the landscape tablet*/
+    
+    /*logo*/
+    .logo{
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end: 2;
+
+    }
+    /*header*/
+    .head{
+        grid-column-start:2;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end: 2;
+        font-family: 'mist';
+    }
+    /*navigation*/
+    .nav1{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .nav2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .nav3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5
+    }
+    .nav4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*about*/
+    .tite{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-family: 'mist';
+    }
+    .bout{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    /*footer*/
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
+/*Computer======================================================================================================================================================================*/
+@media only screen and (min-width: 1200px){
+    /*grid-container*/
+    .grid-container{
+        display: grid;
+        grid-template-rows: 15% 15% 25% 25% 20%;
+        grid-template-columns: 25% 50% 25%;
+    }
+    /*logo*/
+    .logo{
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end: 2;
+
+    }
+    /*header*/
+    .head{
+        grid-column-start:2;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end: 2;
+        font-family: 'mist' , fantasy;
+    }
+    /*navigation*/
+    .nav1{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .nav2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .nav3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5
+    }
+    .nav4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*about*/
+    .tite{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-family: 'mist';
+    }
+    .bout{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    /*footer*/
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
+/*All of them===================================================================================================================================================================*/
