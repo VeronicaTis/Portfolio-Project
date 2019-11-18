@@ -17,7 +17,7 @@
             display: none;
             visibility: hidden;
         }
-        .header{
+        .head{
             display: none;
             visibility: hidden;
         }
@@ -27,7 +27,7 @@
             grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 2;
-            font-family: 'mist';
+            font-family: 'Mist';
         }
         /*header*/
         .tite{
@@ -35,7 +35,7 @@
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3;
-            font-family: 'mist';
+            font-family: 'Mist';
         }
         /*about*/
         .bout{
@@ -91,7 +91,7 @@
         display: none;
         visibility: hidden;
     }
-    .header{
+    .head{
         display: none;
         visibility: hidden;
     }
@@ -101,7 +101,7 @@
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
-        font-family: 'mist';
+        font-family: 'Mist';
     }
     /*header*/
     .tite{
@@ -109,7 +109,7 @@
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-        font-family: 'mist';
+        font-family: 'Mist';
     }
     /*about*/
     .bout{
@@ -160,7 +160,10 @@
         grid-template-columns: 25% 50% 25%;
     }
     /*do not need for the landscape tablet*/
-    
+    .headP{
+        grid: none;
+        visibility: hidden;
+    }
     /*logo*/
     .logo{
         grid-column-start:1;
@@ -175,7 +178,7 @@
         grid-column-end:4;
         grid-row-start:1;
         grid-row-end: 2;
-        font-family: 'mist';
+        font-family: 'Mist';
     }
     /*navigation*/
     .nav1{
@@ -208,7 +211,7 @@
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
-        font-family: 'mist';
+        font-family: 'Mist';
     }
     .bout{
         grid-column-start: 2;
@@ -232,6 +235,12 @@
         grid-template-rows: 15% 15% 25% 25% 20%;
         grid-template-columns: 25% 50% 25%;
     }
+    /*do not need for computer*/
+    .headP{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
     /*logo*/
     .logo{
         grid-column-start:1;
@@ -246,7 +255,7 @@
         grid-column-end:4;
         grid-row-start:1;
         grid-row-end: 2;
-        font-family: 'mist' , fantasy;
+        font-family: 'Mist' , fantasy;
     }
     /*navigation*/
     .nav1{
@@ -279,7 +288,7 @@
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
-        font-family: 'mist';
+        font-family: 'Mist';
     }
     .bout{
         grid-column-start: 2;
