@@ -1,0 +1,326 @@
+@font-face{
+    font-family: 'Mist';
+    src: url('Fonts/Mistrain.ttf');
+    src: url('Fonts/Mistrain.ttf') format('truetype');
+}
+/*phone*/
+@media only screen and (max-width: 600px){
+        /*Grid-container*/
+        .grid-container{
+            display: grid;
+            grid-template-rows: 15% 10% auto 10% 10% 10% 10% 20%;
+            grid-template-columns: 100%;
+            margin: 0px;
+        }
+        /*do not need for the mobile*/
+        .logo{
+            display: none;
+            visibility: hidden;
+        }
+        .head{
+            display: none;
+            visibility: hidden;
+        }
+        /*header*/
+        .headP{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            font-family: 'Mist';
+        }
+        /*header*/
+        .tite{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-family: 'Mist';
+        }
+        /*about*/
+        .bout{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        /*navigation*/
+        .nav1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .nav2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .nav3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        .nav4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 7;
+            grid-row-end: 8;
+        }
+        /*footer*/
+        .foot{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 8;
+            grid-row-end: 9;
+        }
+}
+/*vertical tablet===============================================================================================================================================================*/
+@media only screen and (min-width: 601px) and (max-width: 800px){
+    /*Grid-container*/
+    .grid-container{
+        display: grid;
+        grid-template-rows: 15% 10% auto 10% 10% 10% 10% 20%;
+        grid-template-columns: 100%;
+        margin: 0px;
+    }
+    /*do not need for the vertical tablet*/
+    .logo{
+        display: none;
+        visibility: hidden;
+    }
+    .head{
+        display: none;
+        visibility: hidden;
+    }
+    /*header*/
+    .headP{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        font-family: 'Mist';
+    }
+    /*header*/
+    .tite{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-family: 'Mist';
+    }
+    /*about*/
+    .bout{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    /*navigation*/
+    .nav1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .nav2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .nav3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .nav4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    /*footer*/
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+}
+/*Landscape tablet==============================================================================================================================================================*/
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+     /*grid-container*/
+     .grid-container{
+        display: grid;
+        grid-template-rows: 15% 15% 25% 25% 20%;
+        grid-template-columns: 25% 50% 25%;
+    }
+    /*do not need for the landscape tablet*/
+    .headP{
+        grid: none;
+        visibility: hidden;
+    }
+    /*logo*/
+    .logo{
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end: 2;
+
+    }
+    /*header*/
+    .head{
+        grid-column-start:2;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end: 2;
+        font-family: 'Mist';
+    }
+    /*navigation*/
+    .nav1{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .nav2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .nav3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5
+    }
+    .nav4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*about*/
+    .tite{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-family: 'Mist';
+    }
+    .bout{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    /*footer*/
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
+/*Computer======================================================================================================================================================================*/
+@media only screen and (min-width: 1200px){
+    /*grid-container*/
+    .grid-container{
+        display: grid;
+        grid-template-rows: 20% 50% 120% 120% 30%;
+        grid-template-columns: 25% 50% 25%;
+    }
+    /*do not need for computer*/
+    .headP{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    /*logo*/
+    .logo{
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end: 3;
+        width: 200%;
+    }
+    .logo > img{
+        width: 50%;
+        transform: rotate(340deg);
+    }
+    /*header*/
+    .head{
+        grid-column-start:2;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end: 2;
+        font-family: 'Mist' , fantasy;
+        font-size: 100px;
+        text-shadow: 2px 2px black;
+        color: gold;
+        text-align:right;
+    }
+    /*navigation*/
+    .nav1{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+    .nav2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+    .nav3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5
+    }
+    .nav4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    /*about*/
+    .tite{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-family: 'Mist';
+        font-size: 200px;
+        text-align: center;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+    .bout{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        
+    }
+    /*footer*/
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        border-top: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+}
+/*All of them===================================================================================================================================================================*/
