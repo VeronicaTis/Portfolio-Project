@@ -232,7 +232,7 @@
     /*grid-container*/
     .grid-container{
         display: grid;
-        grid-template-rows: 15% 15% 25% 25% 20%;
+        grid-template-rows: 20% 50% 120% 120% 30%;
         grid-template-columns: 25% 50% 25%;
     }
     /*do not need for computer*/
@@ -246,8 +246,12 @@
         grid-column-start:1;
         grid-column-end:2;
         grid-row-start:1;
-        grid-row-end: 2;
-
+        grid-row-end: 3;
+        width: 200%;
+    }
+    .logo > img{
+        width: 50%;
+        transform: rotate(340deg);
     }
     /*header*/
     .head{
@@ -256,6 +260,10 @@
         grid-row-start:1;
         grid-row-end: 2;
         font-family: 'Mist' , fantasy;
+        font-size: 100px;
+        text-shadow: 2px 2px black;
+        color: gold;
+        text-align:right;
     }
     /*navigation*/
     .nav1{
@@ -263,12 +271,16 @@
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
     }
     .nav2{
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
     }
     .nav3{
         grid-column-start: 1;
@@ -289,12 +301,18 @@
         grid-row-start: 2;
         grid-row-end: 3;
         font-family: 'Mist';
+        font-size: 200px;
+        text-align: center;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
     }
     .bout{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 5;
+        background-image: url(../images/city.gif);
+        background-repeat: round;
     }
     /*footer*/
     .foot{
@@ -302,6 +320,8 @@
         grid-column-end: 4;
         grid-row-start: 5;
         grid-row-end: 6;
+        border-top: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
     }
 }
 /*All of them===================================================================================================================================================================*/
