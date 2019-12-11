@@ -1,9 +1,9 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_01D5AF5C.E2BEE130"
+Content-Type: multipart/related; boundary="----=_NextPart_01D5AF6E.15CCBBE0"
 
 This document is a Single File Web Page, also known as a Web Archive file.  If you are seeing this message, your browser or editor doesn't support Web Archive files.  Please download a browser that supports Web Archive, such as Windows® Internet Explorer®.
 
-------=_NextPart_01D5AF5C.E2BEE130
+------=_NextPart_01D5AF6E.15CCBBE0
 Content-Location: file:///C:/2ECB1D0C/VTisdel.htm
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/html; charset="us-ascii"
@@ -24,10 +24,10 @@ xmlns=3D"http://www.w3.org/TR/REC-html40">
  <o:DocumentProperties>
   <o:Author>Veronica Tisdel</o:Author>
   <o:LastAuthor>Veronica Tisdel</o:LastAuthor>
-  <o:Revision>5</o:Revision>
-  <o:TotalTime>3</o:TotalTime>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>126</o:TotalTime>
   <o:Created>2019-12-10T20:21:00Z</o:Created>
-  <o:LastSaved>2019-12-10T20:22:00Z</o:LastSaved>
+  <o:LastSaved>2019-12-10T22:25:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
   <o:Words>337</o:Words>
   <o:Characters>1921</o:Characters>
@@ -1085,6 +1085,20 @@ p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
 	color:#666666;
 	font-style:italic;
 	mso-bidi-font-style:normal;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
 span.SpellE
 	{mso-style-name:"";
 	mso-spl-e:yes;}
@@ -1507,7 +1521,7 @@ ul
  </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=3DEN-US style=3D'tab-interval:.5in'>
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple style=3D'tab-interval:.5in'>
 
 <div class=3DWordSection1>
 
@@ -2155,7 +2169,7 @@ p>
 
 </html>
 
-------=_NextPart_01D5AF5C.E2BEE130
+------=_NextPart_01D5AF6E.15CCBBE0
 Content-Location: file:///C:/2ECB1D0C/VTisdel_files/themedata.thmx
 Content-Transfer-Encoding: base64
 Content-Type: application/vnd.ms-officetheme
@@ -2218,7 +2232,7 @@ FgAAAAAAAAAAAAAAAADWAgAAdGhlbWUvdGhlbWUvdGhlbWUxLnhtbFBLAQItABQABgAIAAAAIQAN
 0ZCftgAAABsBAAAnAAAAAAAAAAAAAAAAACsKAAB0aGVtZS90aGVtZS9fcmVscy90aGVtZU1hbmFn
 ZXIueG1sLnJlbHNQSwUGAAAAAAUABQBdAQAAJgsAAAAA
 
-------=_NextPart_01D5AF5C.E2BEE130
+------=_NextPart_01D5AF6E.15CCBBE0
 Content-Location: file:///C:/2ECB1D0C/VTisdel_files/colorschememapping.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml
@@ -2228,7 +2242,7 @@ Content-Type: text/xml
  bg1=3D"lt1" tx1=3D"dk1" bg2=3D"lt2" tx2=3D"dk2" accent1=3D"accent1" accent=
 2=3D"accent2" accent3=3D"accent3" accent4=3D"accent4" accent5=3D"accent5" a=
 ccent6=3D"accent6" hlink=3D"hlink" folHlink=3D"folHlink"/>
-------=_NextPart_01D5AF5C.E2BEE130
+------=_NextPart_01D5AF6E.15CCBBE0
 Content-Location: file:///C:/2ECB1D0C/VTisdel_files/filelist.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml; charset="utf-8"
@@ -2239,4 +2253,4 @@ Content-Type: text/xml; charset="utf-8"
  <o:File HRef=3D"colorschememapping.xml"/>
  <o:File HRef=3D"filelist.xml"/>
 </xml>
-------=_NextPart_01D5AF5C.E2BEE130--
+------=_NextPart_01D5AF6E.15CCBBE0--
