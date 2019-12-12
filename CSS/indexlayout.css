@@ -281,6 +281,7 @@
         grid-row-end: 4;
         border-bottom: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/Skillback.jpg);
     }
     .nav3{
         grid-column-start: 1;
