@@ -258,6 +258,14 @@
         transition:1s;
 
     }
+    /*background for the top*/
+    .back{
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:3;
+        
+    }
     /*header*/
     .head{
         grid-column-start:2;
@@ -286,6 +294,12 @@
         grid-row-end: 4;
         border-bottom: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+
+    }
+    .nav2 img{
+        width: 100%;
+        z-index: 1;
+        top: 30%;
     }
     .nav3{
         grid-column-start: 1;
@@ -316,7 +330,8 @@
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 5;
-        background-image: url(../images/park.jpg);
+        background-image: url(../images/night.gif);
+        background-repeat: round;
     }
     /*footer*/
     .foot{
