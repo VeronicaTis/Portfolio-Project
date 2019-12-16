@@ -1,0 +1,137 @@
+@font-face{
+    font-family: 'cactus';
+    src: url('Fonts/CfPunkyRegular-LP1n.ttf');
+    src: url('Fonts/CfPunkyRegular-LP1n.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'prague';
+    src: url('Fonts/Prague Regular.otf');
+    src: url('Fonts/Prague Regular.otf') format('opentype');
+}
+html{
+    background-image: url(../images/background2.jpg);
+}
+/*grid-container*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 25% auto 20%;
+    grid-template-rows: 15% 20% 25% auto;
+}
+/*head and logo*/
+.logo1{
+    z-index:1;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: green;
+}
+.logo1 > img{
+    width:66%;
+}
+.head{
+    z-index:1;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color:  green;
+    text-shadow: 4px 4px yellow, 8px 8px red;
+    background-color: rgb(153, 0, 0);
+    font-family: 'cactus', fantasy;
+    font-size: 100px;
+    text-align: center;
+}
+.logo2{
+    z-index:1;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: green;
+}
+.logo2 > img{
+    width:66%;
+    
+    float:right;
+}
+/*pictures*/
+.picture1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.picture1 > img{
+    width:100%;
+    
+}
+.picture2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: right;
+}
+.picture2 > img{
+    width:100%;
+    
+}
+/*discription*/
+.A1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: yellow;
+    font-family: 'prague' , fantasy;
+    font-size: 20px;
+}
+
+/*nav*/
+.navigation{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    background-color: rgb(153, 0, 0);
+}
+.navigation > a{
+    font-family: 'cactus' , fantasy;
+    color: green;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.navigation > a:hover{
+    background-color: green;
+    color: white;
+    font-size: 60px;
+}
+
+/*aside*/
+.toSide{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: yellow;
+    font-family: 'prague' , fantasy;
+}
+.toSide > a{
+    text-decoration: none;
+}
+.toSide > a > img{
+    width: 10%;
+}

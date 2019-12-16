@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Activities</title>
+        <style>
+                @font-face{
+                    font-family: 'segoe';
+                    src: url('CSS/Fonts/segoesc.ttf');
+                    src: url('CSS/Fonts/segoesc.ttf') format('truetype');
+                }
+                @font-face{
+                    font-family: 'prague';
+                    src: url('CSS/Fonts/Prague Regular.otf');
+                    src: url('CSS/Fonts/Prague Regular.otf') format('opentype');
+                }
+                /*grid-container*/
+                .grid-container{
+                    display: grid;
+                    grid-template-columns: 20% 25% auto 20%;
+                    grid-template-rows: 15% 20% 25% auto;
+                }
+
+                /*Background*/
+                .background{
+                    background-image:url(images/background1.jpg);
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                    grid-row-start: 2;
+                    grid-row-end: 5;
+                    background-repeat: cover;
+                }
+
+                /*nav and logo*/
+                .logo{
+                    z-index: 1;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top:0;
+                    background-color: rgb(0, 51, 102);
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+
+                }
+                .logo > img{
+                    width: 66%;
+                }   
+                .navigation{
+                    font-family: 'segoe';
+                    z-index: 1;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top:0;
+                    background-color: rgb(0, 89, 179);
+                    grid-column-start: 2;
+                    grid-column-end: 5;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    align-content: center;
+                    text-align: center;
+
+                }
+                .navigation > a{
+                    text-decoration: none;
+                    color:  orange;
+                    text-align: center;
+                    align-content: center;
+                    font-size: 50px;
+                    padding: 20px;
+                }
+                .navigation > a:hover{
+                    color: rgb(255, 255, 255);
+                    background-color: orange;
+                    font-size: 60px;
+                }
+                .head{
+                    font-family: 'segoe' , fantasy;
+                    color:  Orange;
+                    background-color: rgb(102, 179, 255);
+                    box-shadow: 5px 5px 10px black; 
+                    font-size: 100px;
+                    text-shadow: 4px 4px yellow, 8px 8px red;
+                    text-align: center;
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+                .picture{
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                    
+                }
+                .picture > img{
+                    width:48%;
+                    box-shadow: 0px 5px 10px black;
+                }
+                .A1{
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+                    box-shadow: 5px 5px 10px black;
+                    font-family: 'prague' , fantasy;
+                    background-color: rgb(153, 0, 0);
+                }
+        </style>
+            <meta charset="UTF-8">
+            <link rel="icon" type="images/png" href="images/logo2.png" sizes="16x16 32x32">
+    </head>
+    <body class="grid-container">
+            <div class="background"></div>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="Housing.html">Housing</a>
+                <a href="activities.html">Activities</a>
+            </nav>
+            <header class="head">
+                Activities
+            </header>
+            <div class="picture">
+                <img src="images/light.jpg">
+                <img src="images/lights.jpg">
+            </div>
+            <article class="A1">
+                <h1>Places to go:</h1>
+                <ul>
+                    <li> Tonto National Forest City: Phoenix, AZ 
+
+                            </li>
+                    <li> Echo Canyon Recreation Area City: Phoenix, AZ 
+
+                            </li>
+                    <li> Encanto Park City: Phoenix, AZ  Telephone: (602) 261-8991 Address: 2605 N. 15th Ave.
+                          
+                            </li>
+                    <li> Indian Bend Wash City: Phoenix, AZ 
+
+                            </li>
+                    <li> North Mountain Recreation Area City: Phoenix, AZ  Telephone: (602) 495-5540 Address: 10600 N. 7th St.
+
+                            </li>
+                </ul>
+                <h1>Tours and Attraction:</h1>
+                <ol>
+                    <li> Arizona Commission On The Arts City: Phoenix, AZ  Telephone: (602) 771-6501 Address: 417 W. Roosevelt St.
+
+                            </li>
+                    <li> Ballet Arizona City: Phoenix, AZ  Telephone: (602) 381-0196 Address: 3645 E. Indian School Rd.
+
+                            </li>
+                    <li> Arizona Opera Company City: Phoenix, AZ  Telephone: (520) 293-4336 Address: 4600 N. 12th St.
+
+                            </li>
+                    <li> Arizona Science Center City: Phoenix, AZ  Address: 600 E. Washington St.
+
+                            </li>
+                    <li> Arizona State Capitol Museum & Wesley Bolin Memorial Plaza City: Phoenix, AZ  Address: 1700 W. Washington St.
+
+                            </li>
+                </ol>
+                <h1>Resteraunts:</h1>
+                <ul>
+                    <li>1. Chelsea’S Kitchen City: Phoenix, AZ  Telephone: (602) 957-2555 Address: 5040 N. 40th St.
+
+                            </li>
+                    <li>2. Cooper’Stown City: Phoenix, AZ  Address: 101 E. Jackson St.
+
+                            </li>
+                    <li>3. Coronado Cafe City: Phoenix, AZ  Telephone: (602) 258-5149 Address: 2201 N. 7th St.
+
+                            </li>
+                    <li>4. Fez City: Phoenix, AZ  Telephone: (602) 287-8700 Address: 3815 N. Central Ave.
+
+                            </li>
+                    <li>5. Maizie’S Cafe & Bistro City: Phoenix, AZ  Telephone: (602) 274-2828 Address: 4750 N. Central Ave.
+
+                            </li>
+                </ul>
+            </article>
+    </body>
+</html>

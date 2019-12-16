@@ -1,0 +1,575 @@
+@media only screen and (max-width: 800px){
+    /*grid*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-rows: 10% auto 20%;
+        margin: 0px;
+    }
+    /*nav*/
+    .nav{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+    }
+
+    a{
+        text-decoration:none;
+        color:orange;
+    }
+    ul{
+        background: white;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        float: right;
+
+    }
+    li{
+        color: orange;
+        background: white;
+        display: block;
+        float: left;
+        padding: .3rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration:0.5s;
+        font-size: 10px;
+    }
+
+    ul li ul{
+        background:white;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        top: 15px;
+        transition: all 0.5s ease;
+        margin-top: .3rem;
+        left: 0;
+        width: 100%;
+        display: none;
+
+    }
+    ul li:hover > ul,
+    ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        float: left;
+        
+
+    }
+    ul li ul li{
+        clear: both;
+        width: 100%;
+        margin: 1px;
+        padding: 1px;
+    }
+    /*logo*/
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .logo > img{
+        width: 95%;
+    }
+    /*header*/
+    .header{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+        color: orange;
+    }
+    /*pic*/
+    .pic1{
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+        border-right-style: 3px double orange;
+    }
+    .pic1 > h2{
+        float: right;
+        color: orange;
+    }
+    .pic1 > img{
+        width: 95%;
+        border-right-style: 3px double orange;
+    }
+    .pic2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .pic2 > h2{
+        float:left;
+        color: orange;
+    }
+    .pic2 > img{
+        width: 95%;
+    }
+    /*foot*/
+    .foot1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: orange;
+
+    }
+    .foot1 > a > img{
+        width: 95%;
+    }
+    .foot2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-column-end: 4;
+        background-color: orange;
+    }
+    .foot2 > a > img{
+        width: 20%;
+    }
+}
+/*===========================================================================================================================================================================*/
+@media only screen and (min-width: 601px) and (max-width: 800px){
+    /*grid*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-rows: 10% auto 20%;
+        margin: 0px;
+    }
+    /*nav*/
+    .nav{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+    }
+    .nav > ul > li > a{
+        font-size: 10px;
+    }
+    a{
+        text-decoration:none;
+        color:orange;
+    }
+    ul{
+        background: white;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        float: right;
+
+    }
+    li{
+        color: orange;
+        background: white;
+        display: block;
+        float: left;
+        padding: .3rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration:0.5s;
+        font-size: 10px;
+    }
+
+    ul li ul{
+        background:white;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        top: 15px;
+        transition: all 0.5s ease;
+        margin-top: .3rem;
+        left: 0;
+        width: 100%;
+        display: none;
+
+    }
+    ul li:hover > ul,
+    ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        float: left;
+        
+
+    }
+    ul li ul li{
+        clear: both;
+        width: 100%;
+        margin: 1px;
+        padding: 1px;
+    }
+    /*logo*/
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .logo > img{
+        width: 95%;
+    }
+    /*header*/
+    .header{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+        color: orange;
+    }
+    /*pic*/
+    .pic1{
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+        border-right-style: 3px double orange;
+    }
+    .pic1 > h2{
+        float: right;
+        color: orange;
+    }
+    .pic1 > img{
+        width: 95%;
+        border-right-style: 3px double orange;
+    }
+    .pic2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .pic2 > h2{
+        float:left;
+        color: orange;
+    }
+    .pic2 > img{
+        width: 95%;
+    }
+    /*foot*/
+    .foot1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: orange;
+
+    }
+    .foot1 > a > img{
+        width: 95%;
+    }
+    .foot2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-column-end: 4;
+        background-color: orange;
+    }
+    .foot2 > a > img{
+        width: 20%;
+    }
+}
+/*========================================================================================================================================================================*/
+@media only screen and (min-width: 801px) and (max-width: 1200px){
+    /*grid*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-rows: 10% auto 20%;
+        margin: 0px;
+    }
+    /*nav*/
+    .nav{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+    }
+    .nav > ul > li > a{
+        font-size: 10px;
+    }
+    a{
+        text-decoration:none;
+        color:orange;
+    }
+    ul{
+        background: white;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        float: right;
+
+    }
+    li{
+        color: orange;
+        background: white;
+        display: block;
+        float: left;
+        padding: .3rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration:0.5s;
+        font-size: 10px;
+    }
+
+    ul li ul{
+        background:white;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        top: 15px;
+        transition: all 0.5s ease;
+        margin-top: .3rem;
+        left: 0;
+        width: 100%;
+        display: none;
+
+    }
+    ul li:hover > ul,
+    ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        float: left;
+        
+
+    }
+    ul li ul li{
+        clear: both;
+        width: 100%;
+        margin: 1px;
+        padding: 1px;
+    }
+    /*logo*/
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .logo > img{
+        width: 95%;
+    }
+    /*header*/
+    .header{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+        color: orange;
+    }
+    /*pic*/
+    .pic1{
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+        border-right-style: 3px double orange;
+    }
+    .pic1 > h2{
+        float: right;
+        color: orange;
+    }
+    .pic1 > img{
+        width: 95%;
+        border-right-style: 3px double orange;
+    }
+    .pic2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .pic2 > h2{
+        float:left;
+        color: orange;
+    }
+    .pic2 > img{
+        width: 95%;
+    }
+    /*foot*/
+    .foot1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: orange;
+
+    }
+    .foot1 > a > img{
+        width: 95%;
+    }
+    .foot2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-column-end: 4;
+        background-color: orange;
+    }
+    .foot2 > a > img{
+        width: 20%;
+    }
+
+}
+/*=========================================================================================================================================================================*/
+@media only screen and (min-width: 1201px){
+    /*grid*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-rows: 10% auto 20%;
+        margin: 0px;
+    }
+    /*nav*/
+    .nav{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+    }
+    a{
+        text-decoration:none;
+        color:orange;
+    }
+    ul{
+        background: white;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        float: right;
+
+    }
+    li{
+        color: orange;
+        background: white;
+        display: block;
+        float: left;
+        padding: .5rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration:0.5s;
+        font-size: 50px;
+    }
+
+    ul li ul{
+        background:white;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        top: 50px;
+        transition: all 0.5s ease;
+        margin-top: .5rem;
+        left: 0;
+        width: 100%;
+        display: none;
+
+    }
+    ul li:hover > ul,
+    ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        float: left;
+        
+
+    }
+    ul li ul li{
+        clear: both;
+        width: 100%;
+        margin: 1px;
+        padding: 1px;
+    }
+    /*logo*/
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .logo > img{
+        width: 95%;
+    }
+    /*header*/
+    .header{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+        color: orange;
+        font-size: 80px;
+    }
+    /*pic*/
+    .pic1{
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+        border-right-style: 3px double orange;
+        font-size: 50px;
+    }
+    .pic1 > h2{
+        float: right;
+        color: orange;
+    }
+    .pic1 > img{
+        width: 95%;
+        border-right-style: 3px double orange;
+    }
+    .pic2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        top: 15px;
+        font-size: 50px;
+    }
+    .pic2 > h2{
+        float:left;
+        color: orange;
+    }
+    .pic2 > img{
+        width: 95%;
+    }
+    /*foot*/
+    .foot1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: orange;
+
+    }
+    .foot1 > a > img{
+        width: 95%;
+    }
+    .foot2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-column-end: 4;
+        background-color: orange;
+    }
+    .foot2 > a > img{
+        width: 20%;
+    }
+}

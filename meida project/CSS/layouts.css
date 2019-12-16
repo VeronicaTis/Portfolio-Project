@@ -1,0 +1,679 @@
+/*GENRAL DEVICE BREAKPOINTS*/
+/* Extra small devices (phones, 600px and down) =======================================================================================================================*/
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 10% 40% auto;
+    }
+    .P1{
+        visibility: hidden;
+        display: none;
+    }
+    .P2{
+        visibility: hidden;
+        display: none;
+    }
+    .F1{
+        visibility: hidden;
+        display: none;
+    }
+    .F2{
+        visibility: hidden;
+        display: none;
+    }
+    .F3{
+        visibility: hidden;
+        display: none;
+    }
+    .F4{
+        visibility: hidden;
+        display: none;
+    }
+    .header{
+        display: block;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color:rgb(134, 89, 45);
+        color:white;
+        overflow-wrap:break-word;
+        font-size: 13px;
+        font-family: 'double' , fantasy;
+    }
+    .header > img{
+        float:left;
+        width:25%;
+        z-index:5;
+    }
+    div.header{
+        display:block;
+        background-color: transparent;
+        color: black;
+        margin: 10px 15px 0px 10px;
+        overflow-wrap:break-word;
+    }
+    div.header > a{
+        display:block;
+        background-color: orange;
+        margin: 20px 0px 0px 300px;
+        color: black;
+        overflow-wrap:break-word;
+        text-align: right;
+    }
+    div.header > a:hover{
+        display:block;
+        background-color: white;
+        margin: 20px 0px 15px 300px;
+        color: orange;
+        overflow-wrap:break-word;
+    }
+    div.header > a:visited{
+        display:block;
+        background-color: white;
+        margin: 20px 0px 15px 300px;
+        color: orange;
+        overflow-wrap:break-word;
+    }
+    div.header > h2{
+        bottom: 50px;
+        overflow-wrap:break-word;
+    }
+   
+    .menu{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color:rgb(134, 89, 45);
+    }
+    a{
+        text-decoration:none;
+        color:orange;
+    }
+    ul{
+        list-style: none;
+    }
+    .menu ul{
+        background: rgb(134, 89, 45);
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        width:70px;
+    }
+    .menu li{
+        color: orange;
+        background: rgb(134, 89, 45);
+        display: block;
+
+        position: relative;
+        text-decoration: none;
+        transition-duration:0.5s;
+    }
+    .menu ul li ul{
+        background:white;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 2rem;
+        left: 30%;
+        display: none;
+    }
+    .menu ul li ul:visited{
+        background-color:rgb(134, 89, 45);
+        color: white;
+    }
+    .menu ul li:hover > ul,
+    ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        
+    }
+    .menu ul li ul li{
+        clear: both;
+        width: 0%;
+    }
+    .menu > ul > li > a > img{
+        float: left;
+        width:50%;
+        background-color: rgb(134, 89, 45);
+    }
+    .menu > ul > li > ul > a{
+        font-size: 20px;
+        width: 50px;
+    }
+    .bio{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: orange;
+        border-bottom: inset 5px  rgb(134, 89, 45);
+        font-family: 'slab' , fantasy;
+    }
+    .bio > ul{
+        font-family: 'slab' , fantasy;
+        background-color: orange;
+        display:block;
+        width: 100%;
+        padding: 0rem;
+    }
+    .A1{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: white;
+    }
+ 
+    .A1 figure  img{
+        width: 20%;
+        padding: 10px;
+        margin:5px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30px 30px 30px 30px;
+        float: left;
+
+    }
+    .A1 > div > img{
+        width: 10%;
+        padding: 10px;
+        margin:10px;
+        float: right;
+    }
+    .A1 > figure > figcaption{
+        color: blue;
+        font-size: 5px;
+        text-align: left;
+    }
+    /*.A1 > figure{
+        
+        position: relative;
+        left:20px;
+        top:10px;
+        margin:0px;
+    }*/
+}
+
+/* Medium devices (landscape tablets, 768px and up)===================================================================================================== */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .grid-container{
+        display: grid;
+        grid-template-rows: 10% auto;
+        grid-template-columns: 35% 35% 30%;
+    }
+    .F1{
+        visibility: hidden;
+        display: none;
+    }
+    .F2{
+        visibility: hidden;
+        display: none;
+    }
+    .F3{
+        visibility: hidden;
+        display: none;
+    }
+    .F4{
+        visibility: hidden;
+        display: none;
+    }
+    .header{
+        display: block;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color:rgb(134, 89, 45);
+        color:white;
+        overflow-wrap:break-word;
+        font-size: 20px;
+        font-family: 'double' , fantasy;
+    }
+    .header > img{
+        float:left;
+        width:15%;
+        z-index:5;
+    }
+    div.header{
+        display:block;
+        background-color: transparent;
+        color: black;
+        margin: 10px 15px 20px 10px;
+        overflow-wrap:break-word;
+    }
+    div.header > a{
+        display:block;
+        background-color: orange;
+        margin: 20px 15px 15px 370px;
+        color: black;
+        overflow-wrap:break-word;
+        text-align: right;
+    }
+    div.header > a:hover{
+        display:block;
+        background-color: white;
+        margin: 20px 15px 15px 370px;
+        color: orange;
+        overflow-wrap:break-word;
+    }
+    div.header > a:visited{
+        display:block;
+        background-color: white;
+        margin: 20px 15px 15px 370px;
+        color: orange;
+        overflow-wrap:break-word;
+    }
+    div.header > h2{
+        bottom: 50px;
+        overflow-wrap:break-word;
+    }
+    .menu{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color:rgb(134, 89, 45);
+    }
+    .menu > ul > a > img{
+        width: 20%;
+    }
+    .A1{
+        visibility: hidden;
+        display: none;
+    }
+    .P1{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: white;
+    }
+    .P1 > figure > img{
+        width: 70%;
+        padding: 10px;
+        margin:10px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30px 30px 30px 30px;
+    }
+    .P1 > figure > figcaption{
+        color: blue;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+    }
+    .P2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: white;
+    }
+    .P2 > figure > img{
+        width: 70%;
+        padding: 10px;
+        margin:10px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30px 30px 30px 30px; 
+    }
+    .P2 > figure > figcaption{
+        color: blue;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+    }
+    .bio{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: orange;
+        font-family: 'slab' , fantasy;
+    }
+    .bio > ul{
+        font-family: 'slab' , fantasy;
+        background-color: orange;
+        display:block;
+        width: 100%;
+        padding: 0rem;
+    }
+    a{
+        text-decoration:none;
+        color:orange;
+    }
+    .menu ul{
+        background: rgb(134, 89, 45);
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        width:70px;
+    }
+    .menu li{
+        color: orange;
+        background: rgb(134, 89, 45);
+        display: block;
+        /*padding: 1rem;*/
+        position: relative;
+        text-decoration: none;
+        transition-duration:0.5s;
+    }
+    .menu ul li ul{
+        background:white;
+        visibility: hidden;
+        opacity: 0;
+        /*min-width: 5rem;*/
+        position: absolute;
+        transition: all 0.5s ease;
+        /*margin-top: 1rem;*/
+        left: 30%;
+        display: none;
+    }
+    .menu ul li ul:visited{
+        background-color:rgb(134, 89, 45);
+        color: white;
+    }
+    .menu ul li:hover > ul,
+    ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        
+    }
+    .menu ul li ul li{
+        clear: both;
+        width: 0%;
+    }
+    ul{
+        list-style: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)============================================================================================================= */
+@media only screen and (min-width: 1200px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: 15% 17.5% 17.5% 17.5% 15%;
+        grid-template-rows: 15% 25% auto;
+    }
+    .P1{
+        visibility: hidden;
+        display: none;
+    }
+    .P2{
+        visibility: hidden;
+        display: none;
+    }
+    .A1{
+        visibility: hidden;
+        display: none;
+    }
+    .header{
+        display: block;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color:rgb(134, 89, 45);
+        color:white;
+        overflow-wrap:break-word;
+        font-size: 50px;
+        font-family: 'double' , fantasy;
+    }
+    .header > img{
+        float:left;
+        width:15%;
+        z-index:5;
+    }
+    div.header{
+        display:block;
+        background-color: transparent;
+        color: black;
+        margin: 10px 15px 20px 10px;
+        overflow-wrap:break-word;
+    }
+    div.header > a{
+        display:block;
+        background-color: orange;
+        margin: 20px 0px 15px 950px;
+        color: black;
+        overflow-wrap:break-word;
+        text-align: right;
+    }
+    div.header > a:hover{
+        display:block;
+        background-color: white;
+        margin: 20px 15px 15px 950px;
+        color: orange;
+        overflow-wrap:break-word;
+    }
+    div.header > a:visited{
+        display:block;
+        background-color: white;
+        margin: 20px 15px 15px 950px;
+        color: orange;
+        overflow-wrap:break-word;
+    }
+    div.header > h2{
+        bottom: 50px;
+        overflow-wrap:break-word;
+    }
+    .menu{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 6;
+        grid-column-end: 7;
+        background-color:rgb(134, 89, 45);
+    }
+    .menu > a > img{
+        float: right;
+        width:50%;
+    }
+    .bio{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        background-color: orange;
+        font-family: 'slab' , fantasy;
+        border-bottom: inset 5px  rgb(134, 89, 45);
+    }
+    .bio > ul{
+        font-family: 'slab' , fantasy;
+        background-color: orange;
+        display:block;
+        width: 100%;
+        padding: 0rem;
+    }
+/*===================================================================================*/
+    .F1{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: white;
+    }
+    .F1 > figure > img{
+        width: 80%;
+        padding: 10px;
+        margin:10px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30px 30px 30px 30px;
+        float: left;
+    }
+    .F1 > div > img{
+        width: 10%;
+        padding: 10px;
+        margin:10px;
+        float: right;
+    }
+    .F1 > figure > figcaption{
+        color: blue;
+        font-size: 15px;
+        text-align: center;
+        display: block;
+
+    }
+    .F2{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: white;
+    }
+    .F2 > figure > img{
+        width: 80%;
+        padding: 10px;
+        margin:10px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30px 30px 30px 30px;
+        float: left;
+
+    }
+    .F2 > div > img{
+        width: 10%;
+        padding: 10px;
+        margin:10px;
+        float: right;
+    }
+    .F2 > figure > figcaption{
+        color: blue;
+        font-size: 15px;
+        text-align: center;
+        display: block;
+
+    }
+    .F3{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        background-color: white;
+    }
+    .F3 > figure > img{
+        width: 80%;
+        padding: 10px;
+        margin:10px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30px 30px 30px 30px;
+        float: left;
+
+    }
+    .F3 > div > img{
+        width: 10%;
+        padding: 10px;
+        margin:10px;
+        float: right;
+    }
+    .F3 > figure > figcaption{
+        color: blue;
+        font-size: 15px;
+        text-align: center;
+        display: block;
+
+    }
+    .F4{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 5;
+        grid-column-end: 6;
+        background-color: white;
+    }
+    .F4 > figure > img{
+        width: 80%;
+        padding: 10px;
+        margin:10px;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 30px 30px 30px 30px;
+        float: left;
+
+    }
+    .F4 > div > img{
+        width: 10%;
+        padding: 10px;
+        margin:10px;
+        float: right;
+    }
+    .F4 > figure > figcaption{
+        color: blue;
+        font-size: 15px;
+        text-align: center;
+        display: block;
+
+    }
+/*========================================================================================================*/
+     a{
+        text-decoration:none;
+        color:orange;
+    }
+    .menu ul{
+        background: rgb(134, 89, 45);
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        width:90px;
+    }
+    .menu li{
+        color: orange;
+        background: rgb(134, 89, 45);
+        display: block;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration:0.5s;
+    }
+    .menu ul li ul{
+        background:white;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        right: 15%;
+        display: none;
+    }
+    .menu ul li ul:visited{
+        background-color:rgb(134, 89, 45);
+        color: white;
+    }
+    .menu ul li:hover > ul,
+    ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        
+    }
+    .menu ul li ul li{
+        clear: both;
+        width: 0%;
+    }
+    ul{
+        list-style: none;
+    }
+}
+/*=========================================================================================================================================================================*/
+
+html{
+    background-image: url(../images/drop.jpg);
+}
+@font-face{
+    font-family: 'double';
+    src: url('Fonts/Wander Brave.ttf');
+    src: url('Fonts/Wander Brave.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'slab';
+    src: url('Fonts/Julien Fincker - Finador Slab Medium');
+    src: url('Fonts/Julien Fincker - Finador Slab Medium') format('opentype');
+}

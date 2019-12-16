@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face{
     font-family: 'Mist';
     src: url('Fonts/Mistrain.ttf');
@@ -232,7 +233,7 @@
     /*grid-container*/
     .grid-container{
         display: grid;
-        grid-template-rows: 20% 50% 120% 120% 30%;
+        grid-template-rows: 15% 25% 40% 40% 30%;
         grid-template-columns: 25% 50% 25%;
     }
     /*do not need for computer*/
@@ -264,6 +265,8 @@
         grid-column-end:4;
         grid-row-start:1;
         grid-row-end:3;
+        z-index: -1;
+        background-image: url(../images/stars.gif);
         
     }
     /*header*/
@@ -286,6 +289,17 @@
         grid-row-end: 4;
         border-bottom: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/des.jpg);
+        background-size: 100%;
+    }
+    .nav1 > a > img{
+        width:70%;
+        padding-top: 20%;
+        padding-left: 15%;
+    }
+    .nav1 > a > img:hover{
+        transform: scale(1.5);
+        transition: 1s;
     }
     .nav2{
         grid-column-start: 3;
@@ -294,24 +308,53 @@
         grid-row-end: 4;
         border-bottom: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
-
+        background-image: url(../images/Skillback.jpg);
+        
     }
-    .nav2 img{
+    .nav2 >a > img{
         width: 100%;
         z-index: 1;
-        top: 30%;
+        padding-top: 150px;
+        
+    }
+    .nav2 > a > img:hover{
+        transform: scale(1.5);
+        transition: 1s;
     }
     .nav3{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 4;
-        grid-row-end: 5
+        grid-row-end: 5;
+        background-image: url(../images/road.jpg);
+        background-size: 100%;
+    }
+    .nav3 > a > img{
+        position: relative;
+        width: 20%;
+        top: 70%;
+        left: 50%;
+    }
+    .nav3 > a > img:hover{
+        transform: translate(-30px, -115px) scale(.2);
+        transition: 1s;
     }
     .nav4{
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
+        background-image: url(../images/gal.jpg);
+        background-size: 110%;
+    }
+    .nav4 > a > img{
+        width: 40%;
+        padding-top: 30%;
+        padding-left: 55%;
+    }
+    .nav4 > a > img:hover{
+        transform: rotateY(360deg);
+        transition: 1s;
     }
     /*about*/
     .tite{
@@ -324,6 +367,7 @@
         text-align: center;
         border-bottom: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+        color:white;
     }
     .bout{
         grid-column-start: 2;
@@ -332,7 +376,24 @@
         grid-row-end: 5;
         background-image: url(../images/night.gif);
         background-repeat: round;
+        color: white;
     }
+    .bout table{
+        width: 100%;
+        
+    }
+    .bout table tr td {
+        color: grey;
+        text-decoration:none;
+
+        font-size: 30px;
+    }
+    .bout table tr td a  img{
+        position: relative;
+        width: 80%;
+        padding: 5px;
+    }
+
     /*footer*/
     .foot{
         grid-column-start: 1;

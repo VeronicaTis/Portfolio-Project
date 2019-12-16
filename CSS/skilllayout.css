@@ -1,7 +1,13 @@
+@charset "UTF-8";
 @font-face{
     font-family: 'Mist';
     src: url('Fonts/Mistrain.ttf');
     src: url('Fonts/Mistrain.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'sun';
+    src: url('Fonts/SunkistSquash-nRR04.ttf');
+    src: url('Fonts/SunkistSquash-nRR04.ttf') format('truetype');
 }
 /*phone*/
 @media only screen and (max-width: 600px){
@@ -232,7 +238,7 @@
     /*grid-container*/
     .grid-container{
         display: grid;
-        grid-template-rows: 20% 50% 120% 120% 30%;
+        grid-template-rows: 15% 25% 40% 40% 30%;
         grid-template-columns: 25% 50% 25%;
     }
     /*do not need for computer*/
@@ -240,6 +246,15 @@
         display: none;
         visibility: hidden;
         opacity: 0;
+    }
+    .back{
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:3;
+        z-index: -1;
+        background-image: url(../images/flow.jpg);
+        background-size: 80%;
     }
     /*logo*/
     .logo{
@@ -278,6 +293,17 @@
         grid-row-end: 4;
         border-bottom: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/des.jpg);
+        background-size: 100%;
+    }
+    .nav1 > a > img{
+        width:70%;
+        padding-top: 20%;
+        padding-left: 15%;
+    }
+    .nav1 > a > img:hover{
+        transform: scale(1.5);
+        transition: 1s;
     }
     .nav2{
         grid-column-start: 3;
@@ -286,18 +312,53 @@
         grid-row-end: 4;
         border-bottom: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/Skillback.jpg);
+        
+    }
+    .nav2 >a > img{
+        width: 100%;
+        z-index: 1;
+        padding-top: 150px;
+        
+    }
+    .nav2 > a > img:hover{
+        transform: scale(1.5);
+        transition: 1s;
     }
     .nav3{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 4;
-        grid-row-end: 5
+        grid-row-end: 5;
+        background-image: url(../images/road.jpg);
+        background-size: 100%;
+    }
+    .nav3 > a > img{
+        position: relative;
+        width: 20%;
+        top: 70%;
+        left: 50%;
+    }
+    .nav3 > a > img:hover{
+        transform: translate(-30px, -115px) scale(.2);
+        transition: 1s;
     }
     .nav4{
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
+        background-image: url(../images/gal.jpg);
+        background-size: 110%;
+    }
+    .nav4 > a > img{
+        width: 40%;
+        padding-top: 30%;
+        padding-left: 55%;
+    }
+    .nav4 > a > img:hover{
+        transform: rotateY(360deg);
+        transition: 1s;
     }
     /*about*/
     .tite{
@@ -317,6 +378,28 @@
         grid-row-start: 3;
         grid-row-end: 5;
         background-image: url(../images/park.jpg);
+        background-size: 100%;
+    }
+    .bout > h1{
+        font-family: 'sun';
+        font-size: 50px;
+        text-align:center;
+    }
+    .bout table{
+        border-collapse: collapse;
+    }
+    .bout table tr th,td{
+        
+        text-align: center;
+    }
+    .bout  table  tr  th{
+        font-family: 'sun';
+        font-size: 25px;
+    }
+    .bout  table  tr  td  img{
+        width:30%;
+        
+        
     }
     /*footer*/
     .foot{
