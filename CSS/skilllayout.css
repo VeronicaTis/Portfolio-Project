@@ -490,6 +490,7 @@
     .bout table{
         border-collapse: collapse;
     }
+    
     .bout table tr th,td{
         
         text-align: center;
@@ -497,6 +498,7 @@
     .bout  table  tr  th{
         font-family: 'sun';
         font-size: 25px;
+        text-shadow: 1px 1px yellow;
     }
     .bout  table  tr  td  img{
         width:30%;
