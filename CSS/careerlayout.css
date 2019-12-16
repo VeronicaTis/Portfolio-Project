@@ -159,24 +159,44 @@
 }
 /*Landscape tablet==============================================================================================================================================================*/
 @media only screen and (min-width: 800px) and (max-width: 1200px){
-     /*grid-container*/
-     .grid-container{
+    /*grid-container*/
+    .grid-container{
         display: grid;
-        grid-template-rows: 15% 15% 25% 25% 20%;
+        grid-template-rows: 15% 25% 40% 40% 30%;
         grid-template-columns: 25% 50% 25%;
     }
-    /*do not need for the landscape tablet*/
+    /*do not need for computer*/
     .headP{
-        grid: none;
+        display: none;
         visibility: hidden;
+        opacity: 0;
     }
     /*logo*/
     .logo{
         grid-column-start:1;
         grid-column-end:2;
         grid-row-start:1;
-        grid-row-end: 2;
+        grid-row-end: 3;
+        width: 200%;
+    }
+    .logo > a > img{
+        width: 50%;
+        transform: rotate(340deg);
+    }
+    .logo > a > img:hover{
+        transform:rotate(-360deg);
+        transition:1s;
 
+    }
+    /*background for the top*/
+    .back{
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:3;
+        z-index: -1;
+        background-image: url(../images/lights.jpg);
+        background-size: 50%;
     }
     /*header*/
     .head{
@@ -184,7 +204,11 @@
         grid-column-end:4;
         grid-row-start:1;
         grid-row-end: 2;
-        font-family: 'Mist';
+        font-family: 'Mist' , fantasy;
+        font-size: 100px;
+        text-shadow: 2px 2px black;
+        color: gold;
+        text-align:right;
     }
     /*navigation*/
     .nav1{
@@ -192,24 +216,74 @@
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/des.jpg);
+        background-size: 100%;
+    }
+    .nav1 > a > img{
+        width:70%;
+        padding-top: 20%;
+        padding-left: 15%;
+    }
+    .nav1 > a > img:hover{
+        transform: scale(1.5);
+        transition: 1s;
     }
     .nav2{
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/Skillback.jpg);
+        
+    }
+    .nav2 >a > img{
+        width: 100%;
+        z-index: 1;
+        padding-top: 150px;
+        
+    }
+    .nav2 > a > img:hover{
+        transform: scale(1.5);
+        transition: 1s;
     }
     .nav3{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 4;
-        grid-row-end: 5
+        grid-row-end: 5;
+        background-image: url(../images/road.jpg);
+        background-size: 100%;
+    }
+    .nav3 > a > img{
+        position: relative;
+        width: 20%;
+        top: 70%;
+        left: 50%;
+    }
+    .nav3 > a > img:hover{
+        transform: translate(-30px, -115px) scale(.2);
+        transition: 1s;
     }
     .nav4{
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
+        background-image: url(../images/gal.jpg);
+        background-size: 110%;
+    }
+    .nav4 > a > img{
+        width: 40%;
+        padding-top: 30%;
+        padding-left: 55%;
+    }
+    .nav4 > a > img:hover{
+        transform: rotateY(360deg);
+        transition: 1s;
     }
     /*about*/
     .tite{
@@ -218,12 +292,26 @@
         grid-row-start: 2;
         grid-row-end: 3;
         font-family: 'Mist';
+        font-size: 200px;
+        text-align: center;
+        border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+       
     }
     .bout{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 5;
+        background-image: url(../images/office.jpg);
+        background-repeat: round;
+    }
+    .bout > h1{
+        font-family: 'sun';
+        font-size: 50px;
+    }
+    .bout > ul > li{
+        font-size: 30px;
     }
     /*footer*/
     .foot{
@@ -231,6 +319,8 @@
         grid-column-end: 4;
         grid-row-start: 5;
         grid-row-end: 6;
+        border-top: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
     }
 }
 /*Computer======================================================================================================================================================================*/
