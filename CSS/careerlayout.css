@@ -27,6 +27,11 @@
             display: none;
             visibility: hidden;
         }
+        
+        .back{
+            display: none;
+            visibility: hidden;
+        }
         /*header*/
         .headP{
             grid-row-start: 1;
@@ -34,6 +39,11 @@
             grid-column-start: 1;
             grid-column-end: 2;
             font-family: 'Mist';
+            text-align: center;
+            font-size: 50px;
+        }
+        .headP > a > img{
+            width: 10%;
         }
         /*header*/
         .tite{
@@ -42,6 +52,8 @@
             grid-row-start: 2;
             grid-row-end: 3;
             font-family: 'Mist';
+            font-size: 60px;
+            text-align: center;
         }
         /*about*/
         .bout{
@@ -49,31 +61,103 @@
             grid-column-end: 2;
             grid-row-start: 3;
             grid-row-end: 4;
+            border-top: 10px solid transparent;
+            border-image:url(../images/border.png) 150 round;
+
         }
+        
         /*navigation*/
         .nav1{
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 4;
             grid-row-end: 5;
+            border-top: 10px solid transparent;
+            border-image:url(../images/border.png) 150 round;
+        }
+        .nav1 > a > img{
+            position: relative;
+            width: 15%;
+            top: 3px;
+        }
+        .n1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            font-family: 'sun';
+            font-size: 40px;
+            text-align: center;
+            padding: 30px;
         }
         .nav2{
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 5;
             grid-row-end: 6;
+            border-top: 10px solid transparent;
+            border-image:url(../images/border.png) 150 round;
+        }
+        .nav2 > a > img{
+           
+            width: 20%;
+            
+        }
+        .n2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            font-family: 'sun';
+            font-size: 40px;
+            text-align: center;
+            padding: 30px;
         }
         .nav3{
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 6;
             grid-row-end: 7;
+            border-top: 10px solid transparent;
+            border-image:url(../images/border.png) 150 round;
+        }
+        .nav3 > a > img{
+            position: relative;
+            width: 10%;
+            top: 15%;
+        }
+        .n3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 7;
+            font-family: 'sun';
+            font-size: 40px;
+            text-align: center;
+            padding: 30px;
         }
         .nav4{
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 7;
             grid-row-end: 8;
+            border-top: 10px solid transparent;
+            border-image:url(../images/border.png) 150 round;
+        }
+        .nav4 > a > img{
+            position: relative;
+            width: 10%;
+            bottom: 2px;
+        }
+        .n4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            font-family: 'sun';
+            font-size: 40px;
+            text-align: center;
+            padding: 30px;
         }
         /*footer*/
         .foot{
@@ -81,6 +165,27 @@
             grid-column-end: 2;
             grid-row-start: 8;
             grid-row-end: 9;
+            border-top: 30px solid transparent;
+            border-image:url(../images/border.png) 150 round;
+            background-image: url(../images/port.jpg);
+            background-size: 60%;
+        }
+        .foot > a > img{
+            width: 10%;
+        }
+        .yes{
+            position: relative;
+            top: 20%;
+            left: 80%;
+            transform: rotate(60deg);
+        }
+        .no{
+            position: relative;
+            top:25%;
+        }
+        .kind{
+            position: relative;
+            left: 30%;
         }
 }
 /*vertical tablet===============================================================================================================================================================*/
@@ -92,12 +197,18 @@
         grid-template-columns: 100%;
         margin: 0px;
     }
-    /*do not need for the vertical tablet*/
+    /*do not need for the mobile*/
     .logo{
         display: none;
         visibility: hidden;
     }
     .head{
+        display: none;
+        visibility: hidden;
+    }
+    
+    
+    .back{
         display: none;
         visibility: hidden;
     }
@@ -108,6 +219,11 @@
         grid-column-start: 1;
         grid-column-end: 2;
         font-family: 'Mist';
+        text-align: center;
+        font-size: 50px;
+    }
+    .headP > a > img{
+        width: 10%;
     }
     /*header*/
     .tite{
@@ -116,6 +232,8 @@
         grid-row-start: 2;
         grid-row-end: 3;
         font-family: 'Mist';
+        font-size: 60px;
+        text-align: center;
     }
     /*about*/
     .bout{
@@ -123,31 +241,103 @@
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
+        border-top: 10px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+
     }
+    
     /*navigation*/
     .nav1{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 4;
         grid-row-end: 5;
+        border-top: 10px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+    .nav1 > a > img{
+        position: relative;
+        width: 15%;
+        top: 3px;
+    }
+    .n1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        font-family: 'sun';
+        font-size: 40px;
+        text-align: center;
+        padding: 30px;
     }
     .nav2{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 5;
         grid-row-end: 6;
+        border-top: 10px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+    .nav2 > a > img{
+       
+        width: 20%;
+        
+    }
+    .n2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        font-family: 'sun';
+        font-size: 40px;
+        text-align: center;
+        padding: 30px;
     }
     .nav3{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 6;
         grid-row-end: 7;
+        border-top: 10px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+    .nav3 > a > img{
+        position: relative;
+        width: 10%;
+        top: 15%;
+    }
+    .n3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        font-family: 'sun';
+        font-size: 40px;
+        text-align: center;
+        padding: 30px;
     }
     .nav4{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 7;
         grid-row-end: 8;
+        border-top: 10px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+    }
+    .nav4 > a > img{
+        position: relative;
+        width: 10%;
+        bottom: 2px;
+    }
+    .n4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        font-family: 'sun';
+        font-size: 40px;
+        text-align: center;
+        padding: 30px;
     }
     /*footer*/
     .foot{
@@ -155,6 +345,27 @@
         grid-column-end: 2;
         grid-row-start: 8;
         grid-row-end: 9;
+        border-top: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/port.jpg);
+        background-size: 60%;
+    }
+    .foot > a > img{
+        width: 10%;
+    }
+    .yes{
+        position: relative;
+        top: 20%;
+        left: 80%;
+        transform: rotate(60deg);
+    }
+    .no{
+        position: relative;
+        top:25%;
+    }
+    .kind{
+        position: relative;
+        left: 30%;
     }
 }
 /*Landscape tablet==============================================================================================================================================================*/
@@ -171,6 +382,22 @@
         visibility: hidden;
         opacity: 0;
     }
+    .n1{
+        display: none;
+        visibility: hidden;
+    }
+    .n2{
+        display: none;
+        visibility: hidden;
+    }
+    .n3{
+        display: none;
+        visibility: hidden;
+    }
+    .n4{
+        display: none;
+        visibility: hidden;
+    }
     /*logo*/
     .logo{
         grid-column-start:1;
@@ -321,6 +548,24 @@
         grid-row-end: 6;
         border-top: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/port.jpg)
+    }
+    .foot > a > img{
+        width: 10%;
+    }
+    .yes{
+        position: relative;
+        top: 20%;
+        left: 80%;
+        transform: rotate(60deg);
+    }
+    .no{
+        position: relative;
+        top:25%;
+    }
+    .kind{
+        position: relative;
+        left: 30%;
     }
 }
 /*Computer======================================================================================================================================================================*/
@@ -337,6 +582,22 @@
         visibility: hidden;
         opacity: 0;
     }
+    .n1{
+        display: none;
+        visibility: hidden;
+    }
+    .n2{
+        display: none;
+        visibility: hidden;
+    }
+    .n3{
+        display: none;
+        visibility: hidden;
+    }
+    .n4{
+        display: none;
+        visibility: hidden;
+    }
     /*logo*/
     .logo{
         grid-column-start:1;
@@ -487,6 +748,24 @@
         grid-row-end: 6;
         border-top: 30px solid transparent;
         border-image:url(../images/border.png) 150 round;
+        background-image: url(../images/port.jpg)
+    }
+    .foot > a > img{
+        width: 10%;
+    }
+    .yes{
+        position: relative;
+        top: 20%;
+        left: 80%;
+        transform: rotate(60deg);
+    }
+    .no{
+        position: relative;
+        top:25%;
+    }
+    .kind{
+        position: relative;
+        left: 30%;
     }
 }
 /*All of them===================================================================================================================================================================*/
