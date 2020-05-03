@@ -667,39 +667,57 @@
         text-align:right;
     }
     /*navigation*/
+    .HAB{
+        z-index:3;
+        position: fixed;
+        right: 1%;
+        top:20%;
+    }
+    .navigation{
+        margin: 0px;
+        z-index: 4;
+        background-color: rgba(0, 0, 0, 0.95); 
+        width: 100%;
+        height: 100%;
+        position: fixed;
+    }
     .nav1{
-        grid-column-start:1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        border-bottom: 30px solid transparent;
-        border-image:url(../images/border.png) 150 round;
+        position: absolute;
+        bottom: 5%;
+        left: 30%;
+        width: 25%;
+        height: 45%;
+        /*border-bottom: 30px solid transparent;
+        border-image:url(../images/border.png) 150 round;*/
         background-image: url(../images/des.jpg);
         background-size: 100%;
     }
     .nav1 > a > img{
-        width:70%;
-        padding-top: 20%;
-        padding-left: 15%;
+        width:50%;
+        position: relative;
+        left: 25%;
+        top: 40%;
     }
     .nav1 > a > img:hover{
         transform: scale(1.5);
         transition: 1s;
     }
     .nav2{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        border-bottom: 30px solid transparent;
-        border-image:url(../images/border.png) 150 round;
+        position: absolute;
+        bottom: 5%;
+        left: 55%;
+        width: 25%;
+        height: 45%;
+       
         background-image: url(../images/Skillback.jpg);
-        
+        background-size:85%;
     }
     .nav2 >a > img{
-        width: 100%;
-        z-index: 1;
-        padding-top: 150px;
+        width: 50%;
+        z-index: 5;
+        position: relative;
+        left: 35%;
+        top: 40%;
         
     }
     .nav2 > a > img:hover{
@@ -707,10 +725,11 @@
         transition: 1s;
     }
     .nav3{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        position: absolute;
+        left: 30%;
+        top:5%;
+        width: 25%;
+        height: 45%;
         background-image: url(../images/road.jpg);
         background-size: 100%;
     }
@@ -718,28 +737,55 @@
         position: relative;
         width: 20%;
         top: 70%;
-        left: 50%;
+        left: 30%;
     }
     .nav3 > a > img:hover{
-        transform: translate(-30px, -115px) scale(.2);
+        transform: translate(30px, -65px) scale(.2);
         transition: 1s;
     }
     .nav4{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        position: absolute;
+        left: 55%;
+        top: 5%;
+        width: 25%;
+        height: 45%;
         background-image: url(../images/gal.jpg);
-        background-size: 110%;
+        background-size: 100%;
     }
     .nav4 > a > img{
-        width: 40%;
-        padding-top: 30%;
-        padding-left: 55%;
+        width: 35%;
+        position: relative;
+        left: 50%;
+        top: 10%;
     }
     .nav4 > a > img:hover{
         transform: rotateY(360deg);
         transition: 1s;
+    }
+    .nav5{
+        z-index: 10;
+        position: absolute;
+        left: 42%;
+        top: 30%;
+        width: 25%;
+        height: 40%;
+        background-image: url(../images/cloud.jpg);
+        background-size: 100%;
+    }
+    .nav5 > a > img{
+        width: 50%;
+        position: relative;
+        left: 23%;
+        
+    }
+    .nav5 p{
+        background-color:rgba(0, 0, 0, 0.589);
+        color:white;
+        font-size: 50px;
+        position: relative;
+        top: 6%;
+        text-align:center;
+        width:100%;
     }
     /*about*/
     .tite{
