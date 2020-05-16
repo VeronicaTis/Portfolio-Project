@@ -1,0 +1,528 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'bats';
+    src:url("Fonts/batmfa__.ttf");
+    src:url("Fonts/batmfa__.ttf") format(truetype);
+}
+/*Phone===============================================================================================================================================================================*/
+@media only screen and (max-width: 600px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: 5% 10% auto 7%;
+        grid-template-columns: 100%;
+    }
+    body{
+        background-image: linear-gradient( black , grey, grey,  black);
+    }
+    .head{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("../images/batman.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    .head h1{
+            text-align: center;
+            z-index: 2;
+            padding: 3em;
+            color:black;
+            text-shadow: 2px 2px white;
+            font-size:50px;
+            font-family: 'bats';
+            position: relative;
+            bottom:60%;
+    }
+    .navigation{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align:center;
+       
+        width: 30%;
+        z-index:3;
+        position: -webkit-sticky;
+        position: sticky;
+        top:0;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+    .navigation a{
+        
+        background-color:black;
+        margin: 20px;
+        position: relative;
+        top:30%;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 50%;
+        height:80px;
+        width:80px;
+        color:white;
+        text-decoration: none;
+    }
+    .words{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .words img{
+        width: 70%;
+        float: right;
+    }
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        text-align: center;
+        background-color: transparent;
+        color: white;
+        
+    }
+    .foot a{
+        background-color: transparent;
+        color: white;
+        text-decoration-line: white;
+    }
+    .foot a:hover{
+        color: rgba(102, 102, 102, 0.712);
+        font-size: 20px;
+        transition: 2s;
+    }
+    .sideOne{
+        display:none;
+        visibility: hidden;
+    }
+    .sideTwo{
+        display:none;
+        visibility: hidden;
+    }
+    .side3{
+        display:none;
+        visibility: hidden;
+    }
+    .side4{
+        display:none;
+        visibility: hidden;
+    }
+}
+/*Vertical============================================================================================================================================================================*/
+@media only screen and (min-width: 601px) and (max-width: 800px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: 5% 17% auto 7%;
+        grid-template-columns: 100%;
+    }
+    body{
+        background-image: linear-gradient( black , grey, grey,  black);
+    }
+    .head{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("../images/batman.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    .head h1{
+            text-align: center;
+            z-index: 2;
+            padding: 3em;
+            color:black;
+            text-shadow: 2px 2px white;
+            font-size:50px;
+            font-family: 'bats';
+            position: relative;
+            bottom:30%;
+    }
+    .navigation{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align:center;
+       
+        width: 30%;
+        z-index:3;
+        position: -webkit-sticky;
+        position: sticky;
+        top:0;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+    .navigation a{
+        
+        background-color:black;
+        margin: 20px;
+        position: relative;
+        top:30%;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 50%;
+        height:80px;
+        width:80px;
+        color:white;
+        text-decoration: none;
+    }
+    .words{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .words img{
+        width: 70%;
+        float: right;
+    }
+    .foot{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        text-align: center;
+        background-color: transparent;
+        color: white;
+        
+    }
+    .foot a{
+        background-color: transparent;
+        color: white;
+        text-decoration-line: white;
+    }
+    .foot a:hover{
+        color: rgba(102, 102, 102, 0.712);
+        font-size: 20px;
+        transition: 2s;
+    }
+    .sideOne{
+        display:none;
+        visibility: hidden;
+    }
+    .sideTwo{
+        display:none;
+        visibility: hidden;
+    }
+    .side3{
+        display:none;
+        visibility: hidden;
+    }
+    .side4{
+        display:none;
+        visibility: hidden;
+    }
+}
+/*landscape===========================================================================================================================================================================*/
+@media only screen and (min-width: 801px) and (max-width: 1199px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: 5% 30% auto 7%;
+        grid-template-columns: 25% 50% 25%;
+    }
+    body{
+        background-image: linear-gradient(to right, black , grey, grey,  black);
+    }
+    .head{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("../images/batman.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    .head h1{
+            text-align: center;
+            z-index: 2;
+            padding: 3em;
+            color:black;
+            text-shadow: 2px 2px white;
+            font-size:100px;
+            font-family: 'bats';
+            position: relative;
+            bottom:30%;
+    }
+    .navigation{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align:center;
+       
+        width: 30%;
+        z-index:3;
+        position: -webkit-sticky;
+        position: sticky;
+        top:0;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+    .navigation a{
+        background-color:black;
+        margin: 20px;
+        position: relative;
+        top:30%;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 50%;
+        height:80px;
+        width:80px;
+        color:white;
+        text-decoration: none;
+    }
+    .words{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        color: white;
+    }
+    .words img{
+        width: 70%;
+        float: left;
+    }
+    .sideOne{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        
+    }
+    .side3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .sideOne img{
+        width:100%;
+        animation-duration: 1s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .side3 img{
+        width:100%;
+    }
+    .sideTwo{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .side4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .sideTwo img{
+        width: 100%;
+        animation-duration: 1s;
+        animation-name: spinning;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .side4 img{
+        width:100%;
+    }
+    @keyframes spinning{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    .foot{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        text-align: center;
+        background-color: transparent;
+        color: black;
+        
+    }
+    .foot a{
+        background-color: transparent;
+        color: black;
+        text-decoration-line: black;
+    }
+    .foot a:hover{
+        color:rgba(0, 0, 0, 0.712);
+        font-size: 20px;
+        transition: 2s;
+    }
+}
+/*Computer============================================================================================================================================================================*/
+@media only screen and (min-width: 1200px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: 5% 30% auto 7%;
+        grid-template-columns: 25% 50% 25%;
+    }
+    body{
+        background-image: linear-gradient(to right, black , grey, grey,  black);
+    }
+    .head{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image: url("../images/batman.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    .head h1{
+            text-align: center;
+            z-index: 2;
+            padding: 3em;
+            color:black;
+            text-shadow: 2px 2px white;
+            font-size:100px;
+            font-family: 'bats';
+            position: relative;
+            bottom:30%;
+    }
+    .navigation{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align:center;
+       
+        width: 30%;
+        z-index:3;
+        position: -webkit-sticky;
+        position: sticky;
+        top:0;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+    .navigation a{
+        background-color:black;
+        margin: 20px;
+        position: relative;
+        top:30%;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 50%;
+        height:80px;
+        width:80px;
+        color:white;
+        text-decoration: none;
+    }
+    .words{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        color: white;
+    }
+    .words img{
+        width: 70%;
+        float: left;
+    }
+    .sideOne{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        
+    }
+    .side3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .sideOne img{
+        width:100%;
+        animation-duration: 1s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .side3 img{
+        width:100%;
+    }
+    .sideTwo{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .side4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .sideTwo img{
+        width: 100%;
+        animation-duration: 1s;
+        animation-name: spinning;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .side4 img{
+        width:100%;
+    }
+    @keyframes spinning{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    .foot{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        text-align: center;
+        background-color: transparent;
+        color: black;
+        
+    }
+    .foot a{
+        background-color: transparent;
+        color: black;
+        text-decoration-line: black;
+    }
+    .foot a:hover{
+        color:rgba(0, 0, 0, 0.712);
+        font-size: 20px;
+        transition: 2s;
+    }
+}

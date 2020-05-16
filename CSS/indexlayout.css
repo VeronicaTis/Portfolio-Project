@@ -24,6 +24,31 @@
     src: url('Fonts/PWChristmascandies.ttf');
     src: url('Fonts/PWChristmascandies.ttf') format('truetype');
 }
+@font-face{
+    font-family: 'clip';
+    src: url('Fonts/Clip.ttf');
+    src: url('Fonts/Clip.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'hello';
+    src: url('Fonts/hellodenverdisplaybold_v1.6.ttf');
+    src: url('Fonts/hellodenverdisplaybold_v1.6.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'neon';
+    src: url('Fonts/NEON____.ttf');
+    src: url('Fonts/NEON____.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'dish';
+    src: url('Fonts/Swedishdemo.otf');
+    src: url('Fonts/Swedishdemo.otf') format('opentype');
+}
+@font-face{
+    font-family: 'rax';
+    src: url('Fonts/Raxey.otf');
+    src: url('Fonts/Raxey.otf') format('opentype');
+}
 /*phone*/
 @media only screen and (max-width: 600px){
         /*Grid-container*/
@@ -62,31 +87,23 @@
             display: none;
             visibility: hidden;
         }
-        .yes{
-            display: none;
-            visibility: hidden;
-        }
-        .yess{
-            display: none;
-            visibility: hidden;
-        }
-        .no{
-            display: none;
-            visibility: hidden;
-        }
-        .noe{
-            display: none;
-            visibility: hidden;
-        }
-        .kind{
-            display: none;
-            visibility: hidden;
-        }
-        .kinda{
+        .navigation{
             display: none;
             visibility: hidden;
         }
         .foots{
+            display: none;
+            visibility: hidden;
+        }
+        .foot{
+            display: none;
+        visibility: hidden;
+        }
+        .pic1{
+            display: none;
+            visibility: hidden;
+        }
+        .pic2{
             display: none;
             visibility: hidden;
         }
@@ -96,7 +113,7 @@
             grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 2;
-            font-family: 'Mist';
+            font-family: 'clip';
             text-align: center;
             font-size: 50px;
             color: rgb(0, 255, 0);
@@ -126,7 +143,7 @@
             grid-column-end: 2;
             grid-row-start: 1;
             grid-row-end: 2;
-            font-family: 'Mist';
+            font-family: 'clip';
             font-size: 60px;
             text-align: center;
             color: rgb(0, 255, 0);
@@ -142,6 +159,7 @@
             border-image:url(../images/NGreenB.png) 150 round;
             background-color: black;
             color: rgb(0, 255, 0);
+            font-family: 'clip';
         }
         
         /*navigation*/
@@ -152,140 +170,54 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: rgb(0,0,0);
             background-color: rgb(0, 0, 0);
             overflow-x: hidden;
             transition: 0.5s;
         }
-        .n1{
-            margin: 0px;
-            padding: 0px;
-            height: 15%;
-        }
-        .n1 a{
-            position: relative;
-            left: 25%;
-            bottom: 400%;
-            margin: 0px;
-            padding: 0px;
-        }
         .n1 a img{
-            transform: rotate(90deg);
-            width:10%;
-            margin: 0px;
-            padding: 0px;
-            
-        }
-        .n2{
-            margin: 0px;
-            padding: 0px;
-            height: 15%;
-        }
-        .n2 a{
-            position: relative;
-            left: 25%;
-            bottom: 350%;
-            margin: 0px;
-            padding: 0px;
+            float:left;
+            padding-right: 10%;
+            width:7.37%;
         }
         .n2 a img{
-            transform: rotate(90deg);
-            width:10%;
-            margin: 0px;
-            padding: 0px;
-            
-        }
-        .n3{
-            margin: 0px;
-            padding: 0px;
-            height: 15%;
-        }
-        .n3 a{
-            position: relative;
-            left: 25%;
-            bottom: 325%;
-            margin: 0px;
-            padding: 0px;
+            float:left;
+            padding-right: 10%;
+            width:7.85%;
         }
         .n3 a img{
-            transform: rotate(90deg);
-            width:10%;
-            margin: 0px;
-            padding: 0px;
-            
-        }
-        .n4{
-            margin: 0px;
-            padding: 0px;
-            height: 15%;
-        }
-        .n4 a{
-            position: relative;
-            left: 25%;
-            bottom: 310%;
-            margin: 0px;
-            padding: 0px;
+            float:left;
+            padding-right: 10%;
+            width:7.55%;
         }
         .n4 a img{
-            transform: rotate(90deg);
-            width:10%;
-            margin: 0px;
-            padding: 0px;
-            
-        }
-        .n5{
-            margin: 0px;
-            padding: 0px;
-            height: 15%;
-        }
-        .n5 a{
-            position: relative;
-            left: 25%;
-            bottom: 280%;
-            margin: 0px;
-            padding: 0px;
+            float:left;
+            padding-right: 10%;
+            width:7.2%;
         }
         .n5 a img{
-            transform: rotate(90deg);
-            width:10%;
-            margin: 0px;
-            padding: 0px;
-            position: absolute;
+            width:7.6%;
         }
         /*footer*/
-        .foot{
+        .feet{
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 3;
             grid-row-end: 4;
             border-top: 10px solid transparent;
             border-image:url(../images/NGreenB.png) 150 round;
-            background-image: url(../images/port.jpg);
+            background-color: black;
         }
-        .foot > a > img{
-            width: 30%;
+        .feet > a > img{
+            width: 20%;
         }
-        .yues{
-            position: relative;
-            top: 20%;
-            left: 80%;
-            transform: rotate(60deg);
-        }
-        .nope{
-            position: relative;
-            top:25%;
-        }
-        .kindof{
-            position: relative;
-            left: 30%;
-        }
+        
 }
 /*vertical tablet===============================================================================================================================================================*/
 @media only screen and (min-width: 601px) and (max-width: 800px){
     /*Grid-container*/
     .grid-container{
         display: grid;
-        grid-template-rows: 15% 10% auto 10% 10% 10% 10% 20%;
+        grid-template-rows:  15% auto 30%;
         grid-template-columns: 100%;
         margin: 0px;
     }
@@ -310,160 +242,136 @@
         display: none;
         visibility: hidden;
     }
+    .logos{
+        display:none;
+        visibility: hidden;
+    }
+    .navigationLand{
+        display: none;
+        visibility: hidden;
+    }
+    .navigation{
+        display: none;
+        visibility: hidden;
+    }
+    .foots{
+        display: none;
+        visibility: hidden;
+    }
+    .foot{
+        display: none;
+    visibility: hidden;
+    }
+    .pic1{
+        display: none;
+        visibility: hidden;
+    }
+    .pic2{
+        display: none;
+        visibility: hidden;
+    }
     /*header*/
     .headP{
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
-        font-family: 'Mist';
+        font-family: 'clip';
         text-align: center;
         font-size: 50px;
+        color: rgb(0, 255, 0);
+        background-color: black;
     }
     .headP > a > img{
-        width: 10%;
+        position: absolute;
+        left: 10%;
+        width: 20%;
+        top: 13%;
+        transform: rotate(340deg);
+    }
+    .headP button{
+        background-color: black;
+        border-color: black;
+        
+    }
+    .headP button img{
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        width: 10%;  
     }
     /*header*/
     .tite{
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        font-family: 'Mist';
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-family: 'clip';
         font-size: 60px;
         text-align: center;
+        color: rgb(0, 255, 0);
+        background-color: black;
     }
     /*about*/
     .ut{
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
         border-top: 10px solid transparent;
-        border-image:url(../images/border.png) 150 round;
-
+        border-image:url(../images/NGreenB.png) 150 round;
+        background-color: black;
+        color: rgb(0, 255, 0);
+        font-family: 'clip';
     }
     
     /*navigation*/
-    .nav1{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        border-top: 10px solid transparent;
-        border-image:url(../images/border.png) 150 round;
+    .navigationPhone{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        transition: 0.5s;
     }
-    .nav1 > a > img{
-        position: relative;
-        width: 15%;
-        top: 3px;
+    .n1 a img{
+        float:left;
+        padding-right: 10%;
+        width:7.37%;
     }
-    .n1{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        font-family: 'sun';
-        font-size: 40px;
-        text-align: center;
-        padding: 30px;
+    .n2 a img{
+        float:left;
+        padding-right: 10%;
+        width:7.85%;
     }
-    .nav2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        border-top: 10px solid transparent;
-        border-image:url(../images/border.png) 150 round;
+    .n3 a img{
+        float:left;
+        padding-right: 10%;
+        width:7.55%;
     }
-    .nav2 > a > img{
-       
-        width: 20%;
-        
+    .n4 a img{
+        float:left;
+        padding-right: 10%;
+        width:7.2%;
     }
-    .n2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        font-family: 'sun';
-        font-size: 40px;
-        text-align: center;
-        padding: 30px;
-    }
-    .nav3{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 6;
-        grid-row-end: 7;
-        border-top: 10px solid transparent;
-        border-image:url(../images/border.png) 150 round;
-    }
-    .nav3 > a > img{
-        position: relative;
-        width: 10%;
-        top: 15%;
-    }
-    .n3{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 6;
-        grid-row-end: 7;
-        font-family: 'sun';
-        font-size: 40px;
-        text-align: center;
-        padding: 30px;
-    }
-    .nav4{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 7;
-        grid-row-end: 8;
-        border-top: 10px solid transparent;
-        border-image:url(../images/border.png) 150 round;
-    }
-    .nav4 > a > img{
-        position: relative;
-        width: 10%;
-        bottom: 2px;
-    }
-    .n4{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 7;
-        grid-row-end: 8;
-        font-family: 'sun';
-        font-size: 40px;
-        text-align: center;
-        padding: 30px;
+    .n5 a img{
+        width:7.6%;
     }
     /*footer*/
-    .foot{
+    .feet{
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 8;
-        grid-row-end: 9;
-        border-top: 30px solid transparent;
-        border-image:url(../images/border.png) 150 round;
-        background-image: url(../images/port.jpg);
-        background-size: 60%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border-top: 10px solid transparent;
+        border-image:url(../images/NGreenB.png) 150 round;
+        background-color: black;
     }
-    .foot > a > img{
-        width: 10%;
-    }
-    .yes{
-        position: relative;
-        top: 20%;
-        left: 80%;
-        transform: rotate(60deg);
-    }
-    .no{
-        position: relative;
-        top:25%;
-    }
-    .kind{
-        position: relative;
-        left: 30%;
+    .feet > a > img{
+        width: 20%;
     }
 
 }
@@ -520,6 +428,18 @@
         display: none;
         visibility: hidden;
     }
+    .feet{
+        display: none;
+        visibility: hidden;
+    }
+    .pic1{
+        display: none;
+        visibility: hidden;
+    }
+    .pic2{
+        display: none;
+        visibility: hidden;
+    }
     /*grid-container*/
     .grid-container{
         display: grid;
@@ -562,8 +482,8 @@
         grid-row-end: 2;
         font-family: 'Candy' , fantasy;
         font-size: 30px;
-        text-shadow: 2px 2px green;
-        color: red;
+        
+        color: rgb(255, 102, 153);
         text-align:right;
     }
     .tite{
@@ -574,6 +494,7 @@
         font-family: 'Candy';
         font-size: 100px;
         text-align: center;
+        text-shadow: 2px 2px green;
     }
     /*navigation*/
     .navigationLand{
@@ -632,7 +553,7 @@
         grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 6;
-        font-family: 'sun';
+        font-family: 'soft';
         font-size: 20px;
         color:rgb(102, 51, 0);
         z-index:1;
@@ -678,7 +599,7 @@
     /*grid-container*/
     .grid-container{
         display: grid;
-        grid-template-rows: 15% 25% 40% 20% 30%;
+        grid-template-rows: 15% 15% 40% 20% 20%;
         grid-template-columns: 25% 50% 25%;
         margin:0px;
     }
@@ -721,6 +642,10 @@
         visibility: hidden;
     }
     .foots{
+        display: none;
+        visibility: hidden;
+    }
+    .feet{
         display: none;
         visibility: hidden;
     }
@@ -915,13 +840,41 @@
         opacity: .87;
         
     }
+    .pic1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        z-index:1;
+    }
+    .pic1 img{
+        width:100%;
+        height:49%;
+    }
+    .pic2{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        z-index:1;
+    }
+    .pic2 img{
+        width:100%;
+    }
+    .t{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        z-index:5;
+    }
     .ut{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 5;
-        font-family: 'sun';
-        font-size: 35px;
+        font-family: 'dish';
+        font-size: 30px;
         color:black;
         z-index:1;
         padding: 20px;
